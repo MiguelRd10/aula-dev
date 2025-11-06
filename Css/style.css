@@ -5,7 +5,11 @@
 /* div.div1 span,div.div2 span {
     color:blue;
 } */
-
+.menu-itens{
+    display: flex;
+    list-style-type: none;
+    justify-content: center; 
+}
 
 /* Seleção por classe */
 /* Formatando a index */
