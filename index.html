@@ -121,7 +121,128 @@
             <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, porro. Magni optio sit doloribus quo, quas veniam sunt, quaerat accusamus minima distinctio soluta a, tempora placeat aperiam dignissimos omnis unde. -->
         </div>
     </div>
-    <script src="JS/introducao.js"></script>
+    <!-- <script src="JS/introducao.js"> -->
+
+    <script>
+        //alert('Hello World !!!')
+
+    console.log('Hello World !!!')
+
+    /**Tipos Primitivos
+        String;
+        Number;
+        Boolean;
+        Null;
+        Undefined;
+    */
+
+    var nome;
+    var valorCurso = 550.42;
+    nome = 'impacta';
+
+    // console.log(valorCurso / 10.00);
+    // console.log(valorCurso + 10.00);
+    // console.log(valorCurso - 10.00);
+    // console.log(valorCurso * 10.00);
+
+    var idade = 10;
+
+    var soma;
+
+    soma = ++idade;
+
+    // console.log(soma);
+
+    // Concatenação e Interpolação
+
+    var firstName = "Camila";
+    var lasName = "da Silva";
+
+    var nomeCompletoC = firstName +' '+ lasName;
+    var nomeCompletoI = `Nome: ${firstName} ${lasName}`;
+
+
+    // console.log(nomeCompletoI);
+    // console.log(nomeCompletoC);
+
+    /* Operdaores relacionais -->
+     <!-- Operators: ==, !=, !==, >=, >, <, <= */
+    /* + Operador unario */
+      var val1 = +'10';
+      var val2 = 20;
+      var comparar = val1 >= val2;
+      //console.log(comparar);
+    
+    //   Truth e  Falsy
+    var contrato = 0;
+
+    console.log(!contrato);
+
+    //   Estrutura de seleção
+    var notaAluno = 5;
+    var nomeAluno = 'Paulo Henrique';
+    var faltas = 10;
+
+    // se o aluvo tiver uma nota >= 7 aprovado e as falts <= 5
+    // se < 7  reprovado
+    /* 
+        || => ou
+        && => E
+        !  => Não
+    */
+
+    // if(notaAluno >= 7){
+    //     console.log('Aprovado')
+    // } else{
+    //     console.log('Reprovado')
+    // // }
+
+    // if(notaAluno >= 7 && faltas <=5){
+    //     console.log('Aprovado')
+    // } else if(notaAluno >= 5 && faltas <=5){
+    //     console.log('Recuperação')
+    // }else{
+    //     console.log('Reprovado')
+    // }
+
+    /* Operador Ternário */
+    var resultado;
+    
+    resultado = notaAluno >= 7 ? "Aprovado" : 'Reprovado', resultado = notaAluno >= 5 ? "Recuperação" :"Reprovado" ;
+
+    //console.log(resultado)
+
+    // var nomeCliente = prompt('digite seu nome');
+    // console.log(nomeCliente)
+
+    var nomeProduto 
+    var quantidadeProduto
+    var valorProduto
+    var nomeCliente
+
+        nomeProduto = prompt('digite o nome do produto')
+        quantidadeProduto = prompt('digite a quantidade de produtos')
+        valorProduto = prompt('digite o valor do produto')
+        nomeCliente = prompt('digite seu Nome')
+
+
+
+    console.log('Nome do Cliente:', nomeCliente);
+    console.log('Produto:', nomeProduto);
+
+    var totalCompra = quantidadeProduto * valorProduto;
+
+    console.log('Total de compra:', totalCompra)
+
+    if(nomeCliente != '' && nomeProduto != '' ){
+        console.log('Obrigado e Volte Sempre!')
+    }
+
+
+    </script>
+
+ 
+    <!-- </script> -->
 </body>
 
 </html>
