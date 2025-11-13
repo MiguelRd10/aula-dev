@@ -1,0 +1,7 @@
+@media print{
+
+    .menu, .btn-gree, .get-a-quote{
+        display: none;
+    }
+
+}

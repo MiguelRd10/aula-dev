@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso Front-End Impacta </title>
     <link rel="stylesheet" href="Css/cores.css">
-    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/style.css"> 
+    <link rel="stylesheet" href="vendor/fontawesome/all.css"> 
+    <link rel="stylesheet" href="Css/icones.css"> 
+    <link rel="stylesheet" href="Css/services.css">
+    <link rel="stylesheet" href="Css/imprimir.css">
+
 </head>
 
 <body>
-    <header>
+      <header>
         <div class="container">
             <div class="header">
                 <div class="logo">
@@ -23,11 +28,8 @@
                                 <a href="#" class="item active">
                                     Home
                                 </a>
-                                <!-- <ul class="sub-menu">
-                                <li>teste 1</li>
-                                <li>teste 2</li>
-                                <li>teste 3</li>
-                            </ul>  -->
+                                <ul class="sub-menu">
+                            </ul>  
                             </li>
                             <li> <a href="#" class="item">About us</a> </li>
                             <li> <a href="#" class="item">Service</a> </li>
@@ -37,29 +39,76 @@
                     </nav>
                 </div>
                 <div class="get-a-quote">
-                    <a href="#"><button class="btn-green">Get a quote</button></a>
+                    <a href="#"><button class="btn-green" onclick="window.print()">Get a quote</button></a>
                 </div>
             </div>
         </div>
     </header>
     <main>
         <div class="container">
-            <div class="main-clean">
-                  <div class="content-main">
-                    <p>Quality cleaning at a fair price</p>
-                    <h1>Specialized, efficient and throug cleaning Services</h1>
-                    <p> We Provide Plataforming cleaning tasks using the least amoutn of time energy ans money </p>
-                    <div class="content-buttons">
-                        <a href="a" class="btn-green"> Get Start Now</a>
-                        <a href="a" class="btn-green2"> View All Services</a>
-                    </di>
-
-                  </div>  
+                <div class="main-clean">   
+                    <div class="content-main">
+                        <p>Quality cleaning at a fair price</p>
+                        <h1>Specialized, efficient and thoroug cleaning Services</h1>
+                        <p> We Provide Performing cleaning tasks using the least amount of time, energi and money </p>
+                        <div class="content-buttons">
+                            <a href="a" class="btn-green"> Get Start Now</a>
+                            <a href="a" class="btn-green2"> View All Services</a>
+                        </div>
+    
+                    </div>  
             </div>
         </div>
-    </main>
-    <section>
+    </main>  
+    <section class= "services">
+        <div class="container">
+            <div class="clean-content">
+                <div class="header-service ptb linha">
+                    <div class="coluna coluna-lg-5 coluna-md-12">
+                        <h2 class="h2 ptb h2-sm h2-md">We Always Provide The Best Service</h2>
+                    </div>
+                    <div class="coluna coluna-lg-5 coluna-md-12 service-description ">
+                        <spam class="titulo"><strong>Services</strong></spam>
+                        <p class="descricao ptb">While we can customize plan to suit your need, most clients schedule regular cleaning services:</p>
+                    </div>
+                    
+                </div>
+                <div class="body-service linha">
+                    <!-- card office -->
+                    <div class="card coluna coluna-lg-4">
+                        <div class="img-top">
+                            <img src="img/service1.png" alt="" class="imagem">
+                            <h3 class="h3">Office Cleaning</h3>
+                            <p class="resumo">While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:</p>
+                            <button class="btn-green">Book Now</button>
+                        </div>
+                        </div>
+                        <!-- Spring Cleaning -->
+                        <div class="card coluna coluna-lg-4">
+                        <div class="img-top">
+                            <img src="img/service2.png" alt="" class="imagem">
+                            <h3 class="h3">Spring Cleaning</h3>
+                            <p class="resumo">While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:</p>
+                            <button class="btn-green">Book Now</button>
+                        </div>
+                        </div>
+                        <!-- House Cleaning -->
+                        <div class="card coluna coluna-lg-4">
+                        <div class="img-top">
+                            <img src="img/service3.png" alt="" class="imagem">
+                            <h3 class="h3">House Cleaning</h3>
+                            <p class="resumo">While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:</p>
 
+                            <button class="btn-green">Book Now</button>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
 
     </section>
 
@@ -72,6 +121,7 @@
             <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, porro. Magni optio sit doloribus quo, quas veniam sunt, quaerat accusamus minima distinctio soluta a, tempora placeat aperiam dignissimos omnis unde. -->
         </div>
     </div>
+    <script src="JS/introducao.js"></script>
 </body>
 
 </html>

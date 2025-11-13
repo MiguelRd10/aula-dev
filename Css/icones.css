@@ -1,0 +1,18 @@
+.icone{
+    font-family: "Font Awesome 7 Free";
+    color: rgb(15, 15, 15);
+    font-weight: 900;
+}
+
+.flecha::after{
+    content: "\f0aa";
+    color:red;
+}
+.flecha:hover::after{
+    content: "\f0a9";
+    color:blue;
+    padding-left: 10px;
+}
+a{
+    text-decoration: none;
+}

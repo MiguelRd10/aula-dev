@@ -9,6 +9,12 @@ html {
     font-family: sauce;
     src: url(../fonts/pepper-sauce.ttf);
 }
+.clean-content{
+    border:#000000 1px solid;
+    margin: auto;
+}
+
+
 
 h1{
     font-size: 38px;
@@ -68,7 +74,7 @@ h1{
 }
 
 .btn-green {
-    background-color: var(--cor-proclen-green-light);
+    background: linear-gradient(var(--cor-proclen-green-light), rgba(46, 241, 69, 0.696));
     border: transparent;
     color: var(--cor-proclen-white);
     border-radius: 3px;
@@ -87,7 +93,7 @@ h1{
 
 .btn-green2{
     background-color: var(--cor-proclen-green-transparency);
-    border: black;
+    border: black solid 1px;
     color: black;
     border-radius: 3px;
     padding: 10px 20px;
@@ -98,13 +104,18 @@ h1{
     line-height: 18px;
     text-align: center;
     min-height: 10px;
-    text-shadow: 1px 1px 1px #000000;
+    /* text-shadow: 1px 1px 1px #000000; */
     box-shadow: 1px 1px 1px #000000;
     text-decoration: none;
 }
+.btn-green2:hover{
+    background-color: var(--cor-proclen-green-dark);
+    text-shadow: -1px 1px 1px #000000;
+    color:  var(--cor-proclen-white);
+}
 
 .btn-green:hover {
-    background-color: var(--cor-proclen-green-dark);
+    background: linear-gradient( rgba(2, 255, 31, 0.696),var(--cor-proclen-green-dark));
     text-shadow: -1px 1px 1px #000000;
 }
 
@@ -145,15 +156,41 @@ h1{
 
 .content-buttons > a {
     display: block;
+    margin-left: 5px;
 }
 
 .content-buttons {
     display: flex;
     width: 60%;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 38px 0 0;
 }
 
+/* Section Service */
+.header-service{
+    display:flex;
+    font-size: 2rem;
+    justify-content: space-between;
+}
+.header-service > div{
+    width: 40%;
+
+}
+
+.service-description{
+    overflow-y: auto;
+    /* Para renderizar no chrome e safary */
+    -webkit-border-radius:50px;
+    /* Renderiza para versões atuais */
+    border-radius: 10px;
+}
+
+/* Media Query */
+@media screen and (max-width: 600px){
+    .menu {
+        display:none;
+    }
+}
 
 /* header {
     background-color: rgb(106, 104, 129);
