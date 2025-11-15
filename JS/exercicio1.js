@@ -26,9 +26,9 @@
 
         if (!produtoSelecionado) {
             alert('Produto não existe');
-        }
+        }continue;
 
-         const totalCompra = calc(dados[1], produtoSelecionado[1], imposto);
+        const totalCompra = calc(dados[1], produtoSelecionado[1], imposto);
 
         console.log(`Produto:  ${produtoSelecionado[0]}`);
         console.log(`Valor Unitario: ${produtoSelecionado[1]}`);
@@ -40,22 +40,6 @@
 
 
 })(calculoTotalCompra)
-
-
-
-function calculoTotalCompra(quantidade, valorProduto, imposto = null) {
-    const totalCompraSemImposto = quantidade * valorProduto;
-    if (imposto) {
-        const total = totalCompraSemImposto + totalCompraSemImposto * imposto;
-        return total;
-    }
-    return totalCompraSemImposto;
-}
-
-
-
-
-
 
 // let valor = 50;
 // console.log('Imprime 1: ', valor);
