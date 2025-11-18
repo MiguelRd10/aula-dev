@@ -24,9 +24,9 @@
         const produtoSelecionado = produtos[cod - 1]
 
 
-        if (!produtoSelecionado) {
-            alert('Produto não existe');
-        }continue;
+        // if (!produtoSelecionado) {
+        //     alert('Produto não existe');
+        // }continue;
 
         const totalCompra = calc(dados[1], produtoSelecionado[1], imposto);
 
